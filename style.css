@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,800;1,900&family=Oswald:wght@200;300;400;500;600&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgb(246,123,199);
+    background: linear-gradient(90deg, rgba(246,123,199,1) 1%, rgba(246,173,123,1) 75%);
+
+}
+
+.container{
+    border: 5px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-size: 2vmin;
+    gap: 10px;
+    width: 100%;
+    background: white;
+    overflow: scroll;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-family: 'Montserrat', serif;
+}
+
+.logo i{
+    background: #0664CF;
+    background: -webkit-linear-gradient(to right, #0664CF 39%, #CF1512 100%);
+    background: -moz-linear-gradient(to right, #0664CF 39%, #CF1512 100%);
+    background: linear-gradient(to right, #0664CF 39%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo a{
+    background: #CFC913;
+    background: -webkit-linear-gradient(to right, #CFC913 0%, #00FF00 31%, #0769D9 43%, #CF15BC 100%);
+    background: -moz-linear-gradient(to right, #CFC913 0%, #00FF00 31%, #0769D9 43%, #CF15BC 100%);
+    background: linear-gradient(to right, #CFC913 0%, #00FF00 31%, #0769D9 43%, #CF15BC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: 1fr;
+    list-style: none;
+}
+
+ul li a{
+    color: black;
+}
+
+ul li a.active{
+    font-weight: bolder;
+    text-shadow: 0px 2px 4px lightgrey;
+}
+
+.icon *{
+    width: 50px;
+    color: black;
+}
+
+.main{
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Montserrat', serif;
+}
+
+/* Left side */
+.left{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    font-size: 3vmin;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+
+.left h1{
+    position: relative;
+    font-weight: bolder;
+    text-align: right;
+    font-size: 6vmin;
+    color: rgba(233, 233, 233, 0.808);
+    font-family: 'Rubik Mono One';
+}
+
+.title{
+    border-left: 7px solid rgb(194, 7, 194);
+    padding-left: 1.5em;
+}
+
+.title h2{
+    width: 350px;
+    text-shadow: 1px 1px 5px rgb(189, 189, 189);
+}
+
+.title h6{
+    margin-top: 1em;
+    width: 320px;
+    color: rgb(124, 124, 124);
+    font-weight: 400;
+}
+
+.info{
+    padding-left: 1.5em;
+}
+
+.info *{
+    margin-top: 1em;
+}
+
+.button{
+    background: rgb(194,24,181);
+    background: linear-gradient(180deg, rgba(194,24,181,1) 6%, rgba(181,17,62,1) 94%);
+    padding: 10px 2.5em;
+    border-radius: 10px;
+    color: white;
+}
+/* Left side end */
+
+/*Img side*/
+.img{
+    z-index: 2;
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-45%);
+    display: block;
+    filter: drop-shadow(15px 15px 4px #0000002c);
+}
+
+img {
+
+    width: 100%;
+  max-width: 400px;
+    height: auto;
+  }
+/*Img side end*/
+
+/*Right side*/
+.right{
+    z-index: 1;
+    background: rgb(194,24,181);
+    background: linear-gradient(180deg, rgba(194,24,181,1) 6%, rgba(181,17,62,1) 94%);
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.rtop{
+    color: rgba(255, 255, 255, 0.452);
+    font-size: 6vmin;
+    font-family: 'Rubik Mono One';
+}
+
+.rright{
+    display: grid;
+    grid-template-columns: repeat(1,20px);
+    grid-template-rows: repeat(5,20px);
+    text-align: right;
+    justify-content: flex-end;
+    
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.445);
+}
+
+.active{
+    background: white;
+    width: 11px;
+    height: 11px;
+}
+
+.rbottom{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    font-weight: lighter;
+}
+
+.rbottom a, .rbottom i{
+    color: white;
+}
+
+.rbottom i{
+    font-size: 3vmin;
+}
+
+
+/*Right side end*/
+
+.bottom{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    gap: 6em;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom a{
+    color: black;
+    display: inline-block;
+    width: 100px;
+}
+
+.slide{
+    margin: auto;
+    margin-left: 50px;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    text-shadow: 1px 1px 5px rgb(189, 189, 189);
+}
+
+#next{
+    color: fuchsia;
+}
+
+.bcontain{
+    display: grid;
+    grid-template-columns: repeat(5,30px);
+}
+
+.bulle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(138, 40, 40, 0.445);
+}
+
+.c1{
+    background: fuchsia;
+}
+
+.c2{
+    background: blue;
+}
+
+.c3{
+    background: yellow;
+}
+
+.c4{
+    background: green;
+}
+
+.c5{
+    background: rgb(168, 4, 168);
+}
+
+footer{
+    text-align: right;
+    padding: 2em;
+}
+
+.fright{
+    display: grid;
+    grid-template-columns: auto 150px 70px 70px 70px;
+    grid-template-rows: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.fright i {
+    color: gray;
+}
+
+.line{
+    height: 1px;
+    background: gray;
+}
