@@ -77,7 +77,7 @@ ul li a{
     color: black;
 }
 
-ul li a:hover{
+ul li a.active{
     font-weight: bolder;
     text-shadow: 0px 2px 4px lightgrey;
 }
@@ -213,7 +213,7 @@ img {
     background: white;
     width: 11px;
     height: 11px;
-    cursor: pointer;
+    cursor: poniter;
 }
 
 .rbottom{
@@ -260,7 +260,7 @@ img {
     text-shadow: 1px 1px 5px rgb(189, 189, 189);
 }
 
-.slide a:hover{
+#next{
     color: fuchsia;
 }
 

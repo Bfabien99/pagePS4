@@ -260,7 +260,7 @@ img {
     text-shadow: 1px 1px 5px rgb(189, 189, 189);
 }
 
-.slide a:hover{
+slide{
     color: fuchsia;
 }
 
