@@ -168,13 +168,9 @@ ul li a:hover{
 img {
 
     width: 100%;
-    max-width: 400px;
+  max-width: 400px;
     height: auto;
   }
-
-img:hover{
-    transform: scale(1.1);
-}
 /*Img side end*/
 
 /*Right side*/

@@ -168,13 +168,9 @@ ul li a:hover{
 img {
 
     width: 100%;
-    max-width: 400px;
+  max-width: 400px;
     height: auto;
   }
-
-img:hover{
-    transform: scale(1.1);
-}
 /*Img side end*/
 
 /*Right side*/
@@ -300,12 +296,7 @@ img:hover{
     background: rgb(168, 4, 168);
 }
 
-.bulle:hover{
-    width: 11px;
-    height: 11px;
-    text-shadow: 1px 1px 5px rgb(85, 85, 85);
-    cursor: pointer;
-}
+.bulle:hover
 
 footer{
     text-align: right;

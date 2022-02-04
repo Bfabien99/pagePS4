@@ -171,10 +171,6 @@ img {
     max-width: 400px;
     height: auto;
   }
-
-img:hover{
-    transform: scale(1.1);
-}
 /*Img side end*/
 
 /*Right side*/
